@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Static Website Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="app" data-v-app="">
+    <div id="fb-root"></div>
+    <input type="hidden" id="routeUrl" name="routeUrl" value="/">
+    <h1 class="hidden">Burgery</h1>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" class="router-link-active router-link-exact-active logo containimage" title="Burgery" aria-current="page">
+                <img alt="Burgery" src="assets/images/logo.png">
+            </a>
+            <span class="mobilemenutoggle" onclick="ToggleOpen('.mobilemenutoggle')"></span>
+            <nav class="menu">
+                <div class="swiper-container menucontainer swiper-container-vertical">
+                    <div class="swiper-wrapper">
+                        <a href="about.html" class="swiper-slide slide menuitem swiper-slide-active" title="About Us">
+                            <span class="scaledicon icon-before-after"></span><span class="title">About</span>
+                        </a>
+                        <a href="menu.html" class="swiper-slide slide menuitem swiper-slide-next" title="Menu">
+                            <span class="scaledicon icon-before-after"></span><span class="title">Menu</span>
+                        </a>
+                        <a href="careers.html" class="swiper-slide slide menuitem" title="Careers"
+                        ><span class="scaledicon icon-before-after"></span><span class="title">Careers</span></a>
+                        <a href="contact.html" class="swiper-slide slide menuitem" title="Contact Us">
+                            <span class="scaledicon icon-before-after"></span><span class="title">Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="social"><a title="Facebook" class="socialicon nodecoration font-before fb"
+                                   href="https://www.facebook.com/MalakAlTawoukLeb/" target="_blank"></a>
+                <div class="share socialicon nodecoration sharethis icon-before-after">
+                    <div class="addthis_toolbox addthis_default_style"><a
+                            class="addthis_counter addthis_pill_style"></a></div>
+                </div>
+            </div>
+        </header>
+        <div id="container" class="clearfix">
+            <section class="abouttext centervertical">
+                <div class="valigncontent"><h2 class="title titlesize-45 icon-title">WHO WE ARE?</h2><span
+                        class="description"><p><span>Malak al Tawouk Restaurant is the most popular Tawouk restaurant chain, specializing in original recipes, providing Professional management and offering great service.<br><span
+                        class="quote">EVERY DAY, THOUSANDS OF CUSTOMERS ARE SERVED AROUND OUR POPULAR CHAINS.</span></span><br><span>We are operating in different regions inside Lebanon and developing new branches in the Middle-East. Malak al Tawouk Restaurant chain is the undisputed leader in the Lebanese fast food category serving fresh, great tasting, made-for-you sandwiches, Salads and wide choices of delicious food items. Healthful and fresh ingredients have made us a popular destination for Loyal consumers. Founded in 1996, we have become the destination for fast food serving And the pioneers in delivery service. Currently we are operating a network of company- owned and Franchise-owned restaurants in Lebanon and international Markets.</span></p><p><strong>We are an ISO 22000:2005 Certified company</strong><br><br></p></span>
+                </div>
+                <span class="arrow"></span></section>
+            <section class="aboutinspiration centervertical"><h3 class="quote valigncontent"> OUR VISION ILLUSTRATES A
+                COMPANY OF EXCEPTIONAL PEOPLE ON A MISSION TO STAY THE BEST IN THE INDUSTRY. </h3></section>
+        </div>
+    </div>
+</div>
+<script src="assets/js/plugins.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "static-website",
+  "version": "1.0.0",
+  "description": "this is an example for a static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "node-sass --output-style compressed -o dist src/scss",
+    "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
+    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
+    "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+    "watch": "run-p serve watch:css",
+    "build:images": "imagemin src/images/**/* --out-dir=dist/images",
+    "watch:images": "onchange \"src/images\" -- npm run build:images",
+    "build:js": "webpack --mode=production",
+    "watch:js": "onchange \"src/js\" -- webpack --mode=development"
+  },
+  "author": "you",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "autoprefixer": "^10.3.3",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.27.5",
+    "imagemin-cli": "^7.0.0",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "stylelint": "^13.13.1",
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.0",
+    "bootstrap": "^5.1.0",
+    "popper.js": "^1.16.1"
+  }
+}

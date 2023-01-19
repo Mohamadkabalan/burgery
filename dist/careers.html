@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Static Website Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="app" data-v-app="">
+    <div id="fb-root"></div>
+    <input type="hidden" id="routeUrl" name="routeUrl" value="/">
+    <h1 class="hidden">Burgery</h1>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" class="router-link-active router-link-exact-active logo containimage" title="Burgery" aria-current="page">
+                <img alt="Burgery" src="assets/images/logo.png">
+            </a>
+            <span class="mobilemenutoggle" onclick="ToggleOpen('.mobilemenutoggle')"></span>
+            <nav class="menu">
+                <div class="swiper-container menucontainer swiper-container-vertical">
+                    <div class="swiper-wrapper">
+                        <a href="about.html" class="swiper-slide slide menuitem swiper-slide-active" title="About Us">
+                            <span class="scaledicon icon-before-after"></span><span class="title">About</span>
+                        </a>
+                        <a href="menu.html" class="swiper-slide slide menuitem swiper-slide-next" title="Menu">
+                            <span class="scaledicon icon-before-after"></span><span class="title">Menu</span>
+                        </a>
+                        <a href="careers.html" class="swiper-slide slide menuitem" title="Careers"
+                        ><span class="scaledicon icon-before-after"></span><span class="title">Careers</span></a>
+                        <a href="contact.html" class="swiper-slide slide menuitem" title="Contact Us">
+                            <span class="scaledicon icon-before-after"></span><span class="title">Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="social"><a title="Facebook" class="socialicon nodecoration font-before fb"
+                                   href="https://www.facebook.com/MalakAlTawoukLeb/" target="_blank"></a>
+                <div class="share socialicon nodecoration sharethis icon-before-after">
+                    <div class="addthis_toolbox addthis_default_style"><a
+                            class="addthis_counter addthis_pill_style"></a></div>
+                </div>
+            </div>
+        </header>
+        <div id="container" class="clearfix">
+            <section class="openings"><h2 class="maintitle titlesize-45">WE ARE HIRING!</h2><span
+                    class="description"><p> If you’re looking for a chance at a fast-paced, hands-on career, you’ve come to the right place. The job opportunities in Malak Al Tawouk restaurants are challenging and fun. </p><p>Send your CV to Hr@burgery.net</p></span>
+                <ul class="openinglisting icon-before">
+                    <li id="careerid_1"><h2 class="text">FOOD HANDLER</h2></li>
+                    <li id="careerid_2"><h2 class="text">OUTLET MANAGER</h2></li>
+                    <li id="careerid_3"><h2 class="text">CALL CENTER AGENT</h2></li>
+                    <li id="careerid_4"><h2 class="text">CASHIER</h2></li>
+                    <li id="careerid_5"><h2 class="text">DELIVERY DRIVER</h2></li>
+                </ul>
+            </section><!---->
+            <section class="applypopup centervertical open d-none">
+                <div class="valigncontent"><span class="closecareersform closeform"></span>
+                    <form id="careers_form" class="careersform icon-before"><h3 class="title titlesize-25">FOOD
+                        HANDLER</h3>
+                        <div class="inputfield"><label class="inputlabel" for="careersfullname">Full Name</label><input
+                                class="input" name="name" required=""></div>
+                        <div class="inputfield"><label class="inputlabel" for="careersemail">Email</label><input
+                                class="input" type="email" name="email" required=""></div>
+                        <div class="inputfield"><label class="inputlabel" for="careersphone">Phone</label><input
+                                class="input numbersonly" name="phone" required=""></div>
+                        <div class="inputfield"><label class="inputlabel" for="careerseducation">Education</label><input
+                                class="input" name="education"></div>
+                        <div class="inputfield"><label class="inputlabel" for="careerscv">Upload C.V</label><input
+                                class="input fileInputPadding" type="file" name="cv_file" accept=".pdf,.doc,.docx,"
+                                required=""></div>
+                        <div class="inputfield area"><textarea class="textarea" name="message" id="careersmessage"
+                                                               placeholder="Message"></textarea></div>
+                        <div style="display: none;">
+                            <div style="width: 304px; height: 78px;">
+                                <div>
+                                    <iframe title="reCAPTCHA"
+                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=%7B%7BSITEKEY%7D%7D&amp;co=aHR0cHM6Ly93d3cubWFsYWthbHRhd291ay5jb206NDQz&amp;hl=tr&amp;v=5qcenVbrhOy8zihcc2aHOWD4&amp;theme=light&amp;size=normal&amp;cb=xmi0dbi91tih"
+                                            width="304" height="78" role="presentation" name="a-acyzde6itm02"
+                                            frameborder="0" scrolling="no"
+                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                </div>
+                                <textarea id="g-recaptcha-response-2" name="g-recaptcha-response"
+                                          class="g-recaptcha-response"
+                                          style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                            </div>
+                            <iframe style="display: none;"></iframe>
+                        </div>
+                        <input type="submit" class="blackbtn send loaderbtn"></form>
+                    <span class="careersmessage titlesize-45">Thank You, We Will Get Back To You Soon!</span></div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/plugins.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+</body>
+</html>
