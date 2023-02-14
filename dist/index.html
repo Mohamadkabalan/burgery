@@ -14,26 +14,27 @@
 <div id="app" data-v-app="">
     <div id="fb-root"></div>
     <input type="hidden" id="routeUrl" name="routeUrl" value="/">
-    <h1 class="hidden">Burgery</h1>
     <div id="wrapper">
         <header>
             <a href="index.html" class="router-link-active router-link-exact-active logo containimage" title="Burgery" aria-current="page">
                 <img alt="Burgery" src="assets/images/logo.png">
             </a>
-            <span class="mobilemenutoggle" onclick="ToggleOpen('.mobilemenutoggle')"></span>
+            <span class="mobilemenutoggle" onclick="ToggleOpen('.mobilemenutoggle')">
+                <img style="max-width: 40px;" src="assets/images/menu-icon.png"/>
+            </span>
             <nav class="menu">
                 <div class="swiper-container menucontainer swiper-container-vertical">
                     <div class="swiper-wrapper">
                         <a href="about.html" class="swiper-slide slide menuitem swiper-slide-active" title="About Us">
-                            <span class="scaledicon icon-before-after"></span><span class="title">About</span>
+                            <span class="scaledicon"></span><span class="title">About</span>
                         </a>
                         <a href="menu.html" class="swiper-slide slide menuitem swiper-slide-next" title="Menu">
-                            <span class="scaledicon icon-before-after"></span><span class="title">Menu</span>
+                            <span class="scaledicon"></span><span class="title">Menu</span>
                         </a>
                         <a href="careers.html" class="swiper-slide slide menuitem" title="Careers"
-                        ><span class="scaledicon icon-before-after"></span><span class="title">Careers</span></a>
+                        ><span class="scaledicon"></span><span class="title">Careers</span></a>
                         <a href="contact.html" class="swiper-slide slide menuitem" title="Contact Us">
-                            <span class="scaledicon icon-before-after"></span><span class="title">Contact</span>
+                            <span class="scaledicon"></span><span class="title">Contact</span>
                         </a>
                     </div>
                 </div>
@@ -51,27 +52,39 @@
                 <div class="swiper-container hometitleswiper swiper-container-horizontal swiper-container-fade">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide">
-                            <h2 class="hidden">HAMBURGER</h2>
-                            <a class="title titlesize-45">HAMBURGER</a>
+                            <a class="title titlesize-45">HAMBURGER HAMBURGER HAMBURGER</a>
                         </div>
                         <div class="swiper-slide slide">
-                            <h2 class="hidden">CHEESE BURGER</h2>
-                            <a class="title titlesize-45">CHEESE BURGER</a>
+                            <a class="title titlesize-45">CHEESE BURGER HAMBURGER</a>
                         </div>
                     </div>
                 </div>
                 <div class="mainslideshowcontainer">
-                    <div class="swiper-container mainslideshow swiper-container-vertical">
+                    <div class="swiper-container mainslideshow">
                         <div class="swiper-wrapper" >
-                            <a class="swiper-slide slide containimage">
-                                <img alt="HAMBURGER" class="" src="/assets/images/cheesy.png"></a>
-                            <a class="swiper-slide slide containimage">
-                                <img alt="HAMBURGER" class="" src="/assets/images/juan.png">
+                            <a class="swiper-slide slide">
+                                <img alt="HAMBURGER" class="" src="/assets/images/cheesy.png">
+                                <div class="swiper-slide-description">
+                                    1 Smashed Angus beef patty, diced onion, dill pickles, yellow mustard and ketchup. Served in a soft squishy bun
+                                </div>
                             </a>
                             <a class="swiper-slide slide containimage">
-                                <img alt="CHEESE BURGER" class="" src="/assets/images/cheesy.png"></a>
+                                <img alt="HAMBURGER" class="" src="/assets/images/juan.png">
+                                <div class="swiper-slide-description">
+                                    2 Smashed Angus beef patty, American cheese slices, diced onion, dill pickles, lettuce and not‐so‐secret sauce. Served in a soft sesame bun.
+                                </div>
+                            </a>
+                            <a class="swiper-slide slide containimage">
+                                <img alt="CHEESE BURGER" class="" src="/assets/images/cheesy.png">
+                                <div class="swiper-slide-description">
+                                    3 Smashed Angus beef patty, American cheese slices, diced onion, dill pickles, lettuce and not‐so‐secret sauce. Served in a soft sesame bun.
+                                </div>
+                            </a>
                             <a class="swiper-slide slide containimage">
                                 <img alt="CHEESE BURGER" class="" src="/assets/images/juan.png">
+                                <div class="swiper-slide-description">
+                                    4 Smashed Angus beef patty, American cheese slices, diced onion, dill pickles, lettuce and not‐so‐secret sauce. Served in a soft sesame bun.
+                                </div>
                             </a>
                         </div>
                         <div class="swiper-pagination swiper-pagination-clickable">
